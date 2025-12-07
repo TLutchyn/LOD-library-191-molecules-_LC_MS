@@ -1,4 +1,4 @@
-# LOD library (191 small molecules), LC-MS
+# LOD library (191 small molecules) LC-MS
 
 This repository implements a chemistry-informed Graph Neural Network (GNN) that integrates local atomic descriptors with global molecular features to model structure–property relationships in the LOD library with 191 small molecules in LC–MS equipment. Molecules are converted from SMILES into graphs where each atom node carries rich structural information (i.e., aromaticity, charge, valence, hybridization, mass-based descriptors), and each node is additionally augmented with global geometry features (molecular volume, length, width, height) to give the model full-molecule context beyond connectivity. A multi-layer Graph Attention Network (GAT), inspired by TChemGNN, learns both local substructure effects and broader molecular shape. The workflow includes graph construction, feature assembly, and a LOOCV training strategy optimized for small chemical datasets, providing a robust, structure-aware deep learning framework for molecular property prediction.
 
