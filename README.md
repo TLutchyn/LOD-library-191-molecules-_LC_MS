@@ -30,7 +30,7 @@ Our use of GAT layers aligns with the attention-based message-passing architectu
 Similarly to Efficient-ChemGNN’s focus on small-molecule datasets, our model is built to work with limited data, leveraging chemistry-informed features and architecture choices to maximize predictive power despite small sample size.
 
 ### - Focus on chemically meaningful predictions (LC–MS response, intensity, concentration)
-Unlike many generic molecular‐property predictors (solubility, log P, etc.), our target is the signal/concentration behavior in LC–MS — a domain where structural context, ionization likelihood, steric hindrance, and electronic features matter significantly. By combining GNN and chemistry knowledge, we aim to bridge cheminformatics and analytical mass-spec modeling.
+Unlike many generic molecular‐property predictors, our target is the signal/concentration behavior in LC–MS — a domain where structural context, ionization likelihood, steric hindrance, and electronic features matter significantly. By combining GNN and chemistry knowledge, we aim to bridge cheminformatics and analytical mass-spec modeling.
 
 ## 🚀 What Makes Our Project Unique (TChemGNN and Other GNN Approaches)
 
