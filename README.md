@@ -50,7 +50,7 @@ Practical applicability for analytical chemistry workflows — the code expects 
 
 Most ML methods assume large datasets, but LC–MS quantification libraries are usually small.
 
-This project is unique because it:
+This work is unique because it:
 
 - uses Leave-One-Out Cross-Validation (LOOCV), ideal for limited molecular sets
 
@@ -60,7 +60,7 @@ This project is unique because it:
 
 ## 🧭 Summary
 
-This project builds on the foundational ideas demonstrated in TChemGNN, applying them to an LC–MS–oriented molecular library. By combining atom-level chemical descriptors, global molecular features, and a GAT-based graph architecture, we aim to deliver a data-efficient, chemically informed, and practically usable GNN-based prediction framework for LC–MS concentration.
+This codes builds on the foundational ideas demonstrated in TChemGNN, applying them to an LC–MS–oriented molecular library. By combining atom-level chemical descriptors, global molecular features, and a GAT-based graph architecture, we aim to deliver a data-efficient, chemically informed, and practically usable GNN-based prediction framework for LC–MS concentration.
 
 ### 🔍 Notebooks
 
