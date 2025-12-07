@@ -32,19 +32,19 @@ Similarly to Efficient-ChemGNN’s focus on small-molecule datasets, our model i
 ### - Focus on chemically meaningful predictions (LC–MS response, intensity, concentration)
 Unlike many generic molecular‐property predictors, our target is the signal/concentration behavior in LC–MS — a domain where structural context, ionization likelihood, steric hindrance, and electronic features matter significantly. By combining GNN and chemistry knowledge, we aim to bridge cheminformatics and analytical mass-spec modeling.
 
-## 🚀 What Makes Our Project Unique (TChemGNN and Other GNN Approaches)
+## 🚀 What Makes Our Project Unique (TChemGNN and other GNN Approaches)
 
 Whereas Efficient-ChemGNN proves the general value of combining global molecular features with GNNs, our project stands out by:
 
-Specializing for LC–MS datasets — the feature engineering, target property (LC–MS response/concentration), and architecture are tuned for mass-spec chemical analytics.
+- Specializing for LC–MS datasets — the feature engineering, target property (LC–MS response/concentration), and architecture are tuned for mass-spec chemical analytics.
 
-A comprehensive atom-level feature set, including several mass-based and hydrogen/valence-based descriptors, in addition to classical bond connectivity — designed to capture nuances affecting ionization and detection.
+- A comprehensive atom-level feature set, including several mass-based and hydrogen/valence-based descriptors, in addition to classical bond connectivity — designed to capture nuances affecting ionization and detection.
 
-Graph Attention Network layers tailored to chemical graphs — allowing attention to pick up on chemically relevant substructures (aromatic rings, heteroatoms, charged centers), which may drive LC–MS behavior more than simple topology.
+- Graph Attention Network layers tailored to chemical graphs — allowing attention to pick up on chemically relevant substructures (aromatic rings, heteroatoms, charged centers), which may drive LC–MS behavior more than simple topology.
 
-LOOCV (Leave-One-Out Cross-Validation) for robust evaluation on a small, chemically diverse dataset — ensuring each unique molecule is tested as “new,” reflecting real-world usage where new compounds arise.
+- LOOCV (Leave-One-Out Cross-Validation) for robust evaluation on a small, chemically diverse dataset — ensuring each unique molecule is tested as “new,” reflecting real-world usage where new compounds arise.
 
-Practical applicability for analytical chemistry workflows — the code expects small to mid-size libraries, requires modest computational resources, and can integrate with LC–MS data (SMILES + signal/conc) directly, making it accessible for chemistry labs rather than only computational groups.
+- Practical applicability for analytical chemistry workflows — the code expects small to mid-size libraries, requires modest computational resources, and can integrate with LC–MS data (SMILES + signal/conc) directly, making it accessible for chemistry labs rather than only computational groups.
 
 ## Tailored for Small Chemical Libraries (N ≈ 191 molecules)
 
