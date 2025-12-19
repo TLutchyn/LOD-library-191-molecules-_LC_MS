@@ -1,6 +1,7 @@
 # Graph machine learning can estimate drug concentrations in whole blood from forensic screening results
 
-This repository implements a chemistry-informed Graph Neural Network (GNN) that predict the LC-HRMS signal-to-concentration ratio library for drugs in whole blood, trained on a dataset of 191 different molecules. 
+This repository implements a chemistry-informed Graph Neural Network (GNN) that predict the LC-HRMS signal-to-concentration ratio library for drugs in whole blood, trained on a dataset of 191 different molecules. The data is in the notebook and can also be accessed on [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17871257.svg)](https://doi.org/10.5281/zenodo.17871257).
+
 
 The GNN model is directly inspired by [TChemGNN](https://github.com/uitml/TChemGNN). Molecules are converted from SMILES into graphs where each atom node carries rich structural information (i.e., aromaticity, charge, valence, hybridization, mass-based descriptors), and each node is additionally augmented with global geometry features (molecular volume, length, width, height) to give the model full-molecule context beyond connectivity. A multi-layer Graph Attention Network (GAT) learns both local substructure effects and broader molecular shape. 
 
