@@ -1,16 +1,19 @@
 # Graph machine learning can estimate drug concentrations in whole blood from forensic screening results
 
-This repository implements a chemistry-informed Graph Neural Network (GNN) that predict the LC-HRMS signal-to-concentration ratio library for drugs in whole blood, trained on a dataset of 191 different molecules. 
+This repository implements a chemistry-informed Graph Neural Network (GNN) that predict the LC-HRMS signal-to-concentration ratio library for drugs in whole blood, trained on a dataset of 191 different molecules. The data is in the notebook and can also be accessed on [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17871257.svg)](https://doi.org/10.5281/zenodo.17871257).
+
 
 The GNN model is directly inspired by [TChemGNN](https://github.com/uitml/TChemGNN). Molecules are converted from SMILES into graphs where each atom node carries rich structural information (i.e., aromaticity, charge, valence, hybridization, mass-based descriptors), and each node is additionally augmented with global geometry features (molecular volume, length, width, height) to give the model full-molecule context beyond connectivity. A multi-layer Graph Attention Network (GAT) learns both local substructure effects and broader molecular shape. 
 
 The workflow includes graph construction, feature assembly, and a LOOCV training strategy optimized for our small chemical dataset.
 
 ## Publication
+
 The code  reproduce the experiments in the paper "Graph machine learning can estimate drug concentrations in whole blood from forensic screening results" available soon on ChemRxiv and under review for publication.
 
 ### Notebooks
- **https://github.com/TLutchyn/LOD-library-191-molecules-_LC_MS/blob/main/LOD_library_LOOCV_8Kepochs_tricks.ipynb**
+
+The notebook in this repository run the training of the GNN model to reproduce the results in the publication. The notebook can be run in [Google Colab](https://colab.research.google.com/) or on a stand alone computer but a GPU is highly recommended for faster training of the GNN.
 
 ## 📚 Related Work & Inspiration: ChemGNN
 
@@ -39,8 +42,4 @@ Unlike many generic molecular‐property predictors, our target is the signal/co
 ## 🧭 Summary
 
 This codes builds on the foundational ideas demonstrated in TChemGNN, applying them to an LC–MS–oriented molecular library. By combining atom-level chemical descriptors, global molecular features, and a GAT-based graph architecture, we aim to deliver a data-efficient, chemically informed, and practically usable GNN-based prediction framework for LC–HRMS concentration.
-
-### 🔍 Notebooks
-
-Notebook can be run in [Google Colab](https://colab.research.google.com/) or on a stand alone computer but a GPU is highly recommended for faster training of the GNN.
 
